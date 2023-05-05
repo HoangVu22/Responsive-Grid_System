@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./grid.css">
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        body {
+            margin: 0;
+        }
+        .container {
+            text-align: center;
+        }
+        .course-item {
+            background-color: orange;
+            height: 260px;
+        }
+        h1 {
+            color: #fff;
+            line-height: 260px;
+        }
+        .row
+        .catelogy {
+            background-color: aqua;
+            height: 260px;
+        }
+        ul {
+            margin-top: 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="grid wide container">
+        <div class="row">
+            <!-- PC: l-4 là vì muốn có 3 cột: tổng 12 cột : 3 = 4 => l-4 -->
+            <!-- Tablet: m-6 là vì muốn có 2 cột: tổng 12 cột : 2 = 6 => m-6 -->
+            <!-- Mobile: c-12 là vì muốn có 1 cột: tổng 12 cột : 1 = 12 => c-12 / 
+                đồng thời trên Mb nó nhỏ nên sẽ loại bỏ phần margin 2 bên ngoài cùng-->
+            <div class="col l-3 m-0 c-0">
+                <div class="catelogy">
+                    <ul>
+                        <li>Javascript</li>
+                        <li>CSS</li>
+                        <li>HTML</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="col l-9 m-12 c-12">
+                <div class="row">
+                    <div class="col l-4 m-6 c-12">  
+                        <div class="course-item">
+                            <h1>Course 1</h1>
+                        </div>
+                    </div>
+                    <div class="col l-4 m-6 c-12">  
+                        <div class="course-item">
+                            <h1>Course 2</h1>
+                        </div>
+                    </div>
+                    <div class="col l-4 m-6 c-12">  
+                        <div class="course-item">
+                            <h1>Course 3</h1>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>
